@@ -23,13 +23,13 @@ class _MyAppState extends State<MyApp> {
         children: [
           Center(
               child: Text(
-            'Meu aplicativo',
+            '- mesmo row(linha 1)',
             style: TextStyle(fontSize: 20),
           )),
           Center(
               child: Text(
-            'Meu aplicativo',
-            style: TextStyle(fontSize: 32),
+            '- mesmo row(linha 2)',
+            style: TextStyle(fontSize: 20),
           )),
         ],
       ),
