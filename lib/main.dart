@@ -32,6 +32,11 @@ class _MyAppState extends State<MyApp> {
             '- mesma coluna(column 2)',
             style: TextStyle(fontSize: 20),
           )),
+          Center(
+              child: Text(
+            '- mesma coluna(column 3)',
+            style: TextStyle(fontSize: 20),
+          )),
         ],
       ),
     ));
