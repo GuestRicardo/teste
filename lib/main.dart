@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: const Text('Aplicativo exemplo scaffold'),
+        title: const Text('Aplicativo stack'),
       ),
       body: const Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
