@@ -21,8 +21,9 @@ class _MyAppState extends State<MyApp> {
       ),
       body: Image.asset(
         'assets/images/1.jpg',
-        // width: 100,
-        // height: 200,
+        fit: BoxFit.cover,
+        width: double.infinity,
+        height: double.infinity,
       ),
     ));
   }
