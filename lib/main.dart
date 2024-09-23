@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
         title: const Text('Aplicativo exemplo scaffold'),
       ),
       body: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
               child: Text(
