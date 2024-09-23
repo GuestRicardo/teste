@@ -19,17 +19,17 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         title: const Text('Aplicativo exemplo scaffold'),
       ),
-      body: const Column(
+      body: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Center(
               child: Text(
-            '- mesma coluna(column 1)',
+            '- mesma linha(row 1)',
             style: TextStyle(fontSize: 20),
           )),
           Center(
               child: Text(
-            '- mesma coluna(column 2)',
+            '- mesma linha(row 2)',
             style: TextStyle(fontSize: 20),
           )),
         ],
