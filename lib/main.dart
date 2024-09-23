@@ -19,24 +19,20 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         title: const Text('Aplicativo stack'),
       ),
-      body: const Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+      body: Stack(
+        fit: StackFit.loose,
+        alignment: AlignmentDirectional.center,
         children: [
-          Center(
-              child: Text(
-            '- mesma coluna(column 1)',
-            style: TextStyle(fontSize: 20),
-          )),
-          Center(
-              child: Text(
-            '- mesma coluna(column 2)',
-            style: TextStyle(fontSize: 20),
-          )),
-          Center(
-              child: Text(
-            '- mesma coluna(column 3)',
-            style: TextStyle(fontSize: 20),
-          )),
+          Container(
+            width: 200,
+            height: 200,
+            color: Colors.blue[900],
+          ),
+          Container(
+            width: 100,
+            height: 100,
+            color: const Color.fromARGB(255, 161, 13, 13),
+          ),
         ],
       ),
     ));
