@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         title: const Text('Aplicativo exemplo scaffold'),
       ),
-      body: const Text('Meu aplicativo'),
+      body: const Center(child: Text('Meu aplicativo')),
     ));
   }
 }
