@@ -19,13 +19,20 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         title: const Text('Aplicativo Carregando imagens'),
       ),
-      body: Image.asset(
-        'assets/images/1.jpg',
-        fit: BoxFit.cover,
+      // imagens online**************************************
+      body: Image.network(
+        'https://i.pinimg.com/564x/f8/21/df/f821df0dbace25474f7cb71f438b3c60.jpg',
+        fit: BoxFit.fill,
         width: double.infinity,
         height: double.infinity,
       ),
-      
+      // imagens offline**************************************
+      // Image.asset(
+      //   'assets/images/1.jpg',
+      //   fit: BoxFit.cover,
+      //   width: double.infinity,
+      //   height: double.infinity,
+      // ),
     ));
   }
 }
