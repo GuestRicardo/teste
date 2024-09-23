@@ -29,12 +29,10 @@ class _MyAppState extends State<MyApp> {
             color: Colors.blue[900],
           ),
           Positioned(
-            
             bottom: 20,
             top: 20,
             left: 20,
             right: 20,
-
             child: Container(
               width: 100,
               height: 100,
