@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: const Text('Aplicativo stack'),
+        title: const Text('Aplicativo Carregando imagens'),
       ),
       body: Stack(
         fit: StackFit.loose,
