@@ -19,7 +19,11 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         title: const Text('Aplicativo Carregando imagens'),
       ),
-      body: ,
+      body: Image.asset(
+        'assets/images/1.jpg',
+        // width: 100,
+        // height: 200,
+      ),
     ));
   }
 }
