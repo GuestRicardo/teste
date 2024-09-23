@@ -20,26 +20,7 @@ class _MyAppState extends State<MyApp> {
         title: const Text('Aplicativo Carregando imagens'),
       ),
       body: Stack(
-        fit: StackFit.loose,
-        alignment: AlignmentDirectional.center,
-        children: [
-          Container(
-            width: 200,
-            height: 200,
-            color: Colors.blue[900],
-          ),
-          Positioned(
-            bottom: 20,
-            top: 20,
-            left: 20,
-            right: 20,
-            child: Container(
-              width: 100,
-              height: 100,
-              color: const Color.fromARGB(255, 161, 13, 13),
-            ),
-          ),
-        ],
+       
       ),
     ));
   }
