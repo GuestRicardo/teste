@@ -20,16 +20,16 @@ class _MyAppState extends State<MyApp> {
         title: const Text('Aplicativo exemplo scaffold'),
       ),
       body: const Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Center(
               child: Text(
-            '- mesmo row(linha 1)',
+            '- mesma linha(row 1)',
             style: TextStyle(fontSize: 20),
           )),
           Center(
               child: Text(
-            '- mesmo row(linha 2)',
+            '- mesma linha(row 2)',
             style: TextStyle(fontSize: 20),
           )),
         ],
