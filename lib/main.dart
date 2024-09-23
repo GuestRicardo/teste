@@ -5,7 +5,6 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  final String nome = 'Jose';
   const MyApp({super.key});
 
   @override
@@ -13,23 +12,13 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  int salario = 8522;
-
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: GestureDetector(
-        onTap: () {
-          print('clicou');
-          print('novo salario $salario ');
-
-          setState(() {
-            salario = salario + 100;
-          });
-        },
-        child: Text('O salario do ${widget.nome} é $salario',
-            textDirection: TextDirection.ltr),
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(
+        title: const Text('Aplicativo exemplo scaffold'),
       ),
-    );
+    ));
   }
 }
