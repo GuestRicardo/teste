@@ -241,7 +241,10 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               GestureDetector(
-                child: Text(
+                onTap: () {
+                  calcular('+');
+                },
+                child: const Text(
                   '+',
                   style: TextStyle(fontSize: 48),
                 ),
