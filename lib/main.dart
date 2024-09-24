@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -13,6 +13,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String numero = '';
+  double primeiroNumero = 0.0;
+  String operacao = '';
 
   void calcular(String tecla) {
     switch (tecla) {
@@ -27,16 +29,37 @@ class _MyAppState extends State<MyApp> {
       case '8':
       case '9':
       case '7':
+      case ',':
         setState(() {
           numero += tecla;
 
+          numero = numero.replaceAll(',', '.');
+
           if (numero.contains('.')) {
-            double numeroDouble = double.parse(numero);
-            numero = numeroDouble.toString();
+            // double numeroDouble = double.parse(numero);
+            // numero = numeroDouble.toString();
           } else {
             int numeroInt = int.parse(numero);
             numero = numeroInt.toString();
           }
+          numero = numero.replaceAll('.', ',');
+        });
+        break;
+
+      case '+':
+        operacao = tecla;
+        primeiroNumero = double.parse(numero);
+        numero = '0';
+        break;
+
+      case '=':
+        double resultado ;
+        if (operacao == '+') {
+          resultado = primeiroNumero + double.parse(numero);
+        }
+        setState(() {
+          numero = resultado.toString();
+          numero = numero.replaceAll('.', ',');
         });
         break;
 
