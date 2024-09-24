@@ -12,7 +12,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String numero = 'Numero';
+  String numero = '';
 
   void calcular(String tecla) {
     switch (tecla) {
@@ -79,7 +79,15 @@ class _MyAppState extends State<MyApp> {
               ),
               const Text(' '),
               const Text(' '),
-              const Text('DEL', style: TextStyle(fontSize: 48)),
+              GestureDetector(
+                onTap: () {
+                  calcular('apagar');
+                },
+                child: const Text(
+                  'DEL',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
             ],
           ),
           Row(
@@ -164,22 +172,75 @@ class _MyAppState extends State<MyApp> {
               ),
             ],
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Text('1', style: TextStyle(fontSize: 48)),
-              Text('2', style: TextStyle(fontSize: 48)),
-              Text('3', style: TextStyle(fontSize: 48)),
-              Text('-', style: TextStyle(fontSize: 48)),
+              GestureDetector(
+                onTap: () {
+                  calcular('1');
+                },
+                child: const Text(
+                  '1',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular('2');
+                },
+                child: const Text(
+                  '2',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular('3');
+                },
+                child: const Text(
+                  '3',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                child: const Text(
+                  '-',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
             ],
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Text('0', style: TextStyle(fontSize: 48)),
-              Text(',', style: TextStyle(fontSize: 48)),
-              Text('=', style: TextStyle(fontSize: 48)),
-              Text('+', style: TextStyle(fontSize: 48)),
+              GestureDetector(
+                onTap: () {
+                  calcular('0');
+                },
+                child: const Text(
+                  '0',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular(',');
+                },
+                child: const Text(
+                  ',',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular('=');
+                },
+                child: const Text(
+                  '=',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              const Text('+', style: TextStyle(fontSize: 48)),
             ],
           ),
           const Text('Coluna 6'),
