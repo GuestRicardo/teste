@@ -22,6 +22,7 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
       body: const Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Text('Coluna 1'),
           Text('Coluna 2'),
