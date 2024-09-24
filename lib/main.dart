@@ -16,8 +16,31 @@ class _MyAppState extends State<MyApp> {
 
   void calcular(String tecla) {
     switch (tecla) {
+      case '0':
+      case '1':
+      case '2':
+      case '3':
+      case '4':
+      case '5':
+      case '6':
       case '7':
+      case '8':
+      case '9':
+      case '7':
+        setState(() {
+          numero += tecla;
+        });
+        break;
+
+      case 'AC':
+        setState(() {
+          numero = '0';
+        });
+        break;
+
+      default:
         numero += tecla;
+        break;
     }
   }
 
@@ -64,7 +87,7 @@ class _MyAppState extends State<MyApp> {
             children: [
               GestureDetector(
                 onTap: () {
-                  print('clicou');
+                  calcular('7');
                 },
                 child: const Text(
                   '7',
