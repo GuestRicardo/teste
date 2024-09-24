@@ -21,10 +21,10 @@ class _MyAppState extends State<MyApp> {
           child: Text('Calculadora'),
         ),
       ),
-      body: const Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Text(
@@ -36,13 +36,21 @@ class _MyAppState extends State<MyApp> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Text('AC', style: TextStyle(fontSize: 48)),
-              Text(' '),
-              Text(' '),
-              Text('DEL', style: TextStyle(fontSize: 48)),
+              GestureDetector(
+                onTap: () {
+                  print('clicou');
+                },
+                child: const Text(
+                  'AC',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              const Text(' '),
+              const Text(' '),
+              const Text('DEL', style: TextStyle(fontSize: 48)),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text(
@@ -54,7 +62,7 @@ class _MyAppState extends State<MyApp> {
               Text('/', style: TextStyle(fontSize: 48)),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text('4', style: TextStyle(fontSize: 48)),
@@ -63,7 +71,7 @@ class _MyAppState extends State<MyApp> {
               Text('x', style: TextStyle(fontSize: 48)),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text('1', style: TextStyle(fontSize: 48)),
@@ -72,7 +80,7 @@ class _MyAppState extends State<MyApp> {
               Text('-', style: TextStyle(fontSize: 48)),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text('0', style: TextStyle(fontSize: 48)),
@@ -81,7 +89,7 @@ class _MyAppState extends State<MyApp> {
               Text('+', style: TextStyle(fontSize: 48)),
             ],
           ),
-          Text('Coluna 6'),
+          const Text('Coluna 6'),
         ],
       ),
     ));
