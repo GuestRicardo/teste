@@ -17,22 +17,20 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: const Text('Aplicativo Carregando imagens'),
+        title: const Center(
+          child: Text('Calculadora'),
+        ),
       ),
-      // imagens online**************************************
-      body: Image.network(
-        'https://i.pinimg.com/564x/f8/21/df/f821df0dbace25474f7cb71f438b3c60.jpg',
-        fit: BoxFit.fill,
-        width: double.infinity,
-        height: double.infinity,
+      body: const Column(
+        children: [
+          Text('Coluna 1'),
+          Text('Coluna 2'),
+          Text('Coluna 3'),
+          Text('Coluna 4'),
+          Text('Coluna 5'),
+          Text('Coluna 6'),
+        ],
       ),
-      // imagens offline**************************************
-      // Image.asset(
-      //   'assets/images/1.jpg',
-      //   fit: BoxFit.cover,
-      //   width: double.infinity,
-      //   height: double.infinity,
-      // ),
     ));
   }
 }
