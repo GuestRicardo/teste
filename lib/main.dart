@@ -240,7 +240,12 @@ class _MyAppState extends State<MyApp> {
                   style: TextStyle(fontSize: 48),
                 ),
               ),
-              const Text('+', style: TextStyle(fontSize: 48)),
+              GestureDetector(
+                child: Text(
+                  '+',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
             ],
           ),
           const Text('Coluna 6'),
