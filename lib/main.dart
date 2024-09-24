@@ -12,6 +12,15 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  String numero = 'Numero';
+
+  void calcular(String tecla) {
+    switch (tecla) {
+      case '7':
+        numero += tecla;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,12 +33,12 @@ class _MyAppState extends State<MyApp> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Text(
-                '0',
-                style: TextStyle(fontSize: 95),
+                numero,
+                style: const TextStyle(fontSize: 95),
               ),
             ],
           ),
@@ -50,16 +59,21 @@ class _MyAppState extends State<MyApp> {
               const Text('DEL', style: TextStyle(fontSize: 48)),
             ],
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Text(
-                '7',
-                style: TextStyle(fontSize: 48),
+              GestureDetector(
+                onTap: () {
+                  print('clicou');
+                },
+                child: const Text(
+                  '7',
+                  style: TextStyle(fontSize: 48),
+                ),
               ),
-              Text('8', style: TextStyle(fontSize: 48)),
-              Text('9', style: TextStyle(fontSize: 48)),
-              Text('/', style: TextStyle(fontSize: 48)),
+              const Text('8', style: TextStyle(fontSize: 48)),
+              const Text('9', style: TextStyle(fontSize: 48)),
+              const Text('/', style: TextStyle(fontSize: 48)),
             ],
           ),
           const Row(
