@@ -29,11 +29,14 @@ class _MyAppState extends State<MyApp> {
       case '7':
         setState(() {
           numero += tecla;
-          double numeroDouble = double.parse(numero);
-          int numeroInt = int.parse(numero);
 
-          numero = numeroDouble.toString();
-          numero = numeroInt.toString();
+          if (numero.contains('.')) {
+            double numeroDouble = double.parse(numero);
+            numero = numeroDouble.toString();
+          } else {
+            int numeroInt = int.parse(numero);
+            numero = numeroInt.toString();
+          }
         });
         break;
 
