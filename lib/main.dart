@@ -94,18 +94,74 @@ class _MyAppState extends State<MyApp> {
                   style: TextStyle(fontSize: 48),
                 ),
               ),
-              const Text('8', style: TextStyle(fontSize: 48)),
-              const Text('9', style: TextStyle(fontSize: 48)),
-              const Text('/', style: TextStyle(fontSize: 48)),
+              GestureDetector(
+                onTap: () {
+                  calcular('8');
+                },
+                child: const Text(
+                  '8',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular('9');
+                },
+                child: const Text(
+                  '9',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular('/');
+                },
+                child: const Text(
+                  '/',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
             ],
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Text('4', style: TextStyle(fontSize: 48)),
-              Text('5', style: TextStyle(fontSize: 48)),
-              Text('6', style: TextStyle(fontSize: 48)),
-              Text('x', style: TextStyle(fontSize: 48)),
+              GestureDetector(
+                onTap: () {
+                  calcular('4');
+                },
+                child: const Text(
+                  '4',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular('5');
+                },
+                child: const Text(
+                  '5',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular('6');
+                },
+                child: const Text(
+                  '6',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  calcular('*');
+                },
+                child: const Text(
+                  'x',
+                  style: TextStyle(fontSize: 48),
+                ),
+              ),
             ],
           ),
           const Row(
