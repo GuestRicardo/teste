@@ -26,10 +26,42 @@ class _MyAppState extends State<MyApp> {
         children: [
           Text('Coluna 1'),
           Text('Coluna 2'),
-          Text('Coluna 3'),
-          Text('Coluna 4'),
-          Text('Coluna 5'),
-          Text('Coluna 6'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text('7'),
+              Text('8'),
+              Text('9'),
+              Text('/'),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text('4'),
+              Text('5'),
+              Text('6'),
+              Text('x'),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text('1'),
+              Text('2'),
+              Text('3'),
+              Text('-'),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text('0'),
+              Text(','),
+              Text('='),
+              Text('+'),
+            ],
+          ),
         ],
       ),
     ));
