@@ -147,7 +147,10 @@ class _MyAppState extends State<MyApp> {
                 onTap: () {
                   calcular('<x');
                 },
-                child: Image.asset('assets/images/arrow_back.png'),
+                child: Image.asset(
+                  'assets/images/arrow_back.png',
+                  width: 72,
+                ),
               ),
             ],
           ),
