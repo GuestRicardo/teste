@@ -61,16 +61,12 @@ class Tela2 extends StatelessWidget {
           body: Center(
             child: ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) {
-                    return const Tela1();
-                  }),
-                );
+                Navigator.pop(context);
               },
               child: const Text('Voltar uma tela.'),
             ),
           ),
+          backgroundColor: Colors.black,
         ),
       ),
     );
