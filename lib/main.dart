@@ -48,7 +48,9 @@ class _MyAppState extends State<MyApp> {
 
       case '+':
         operacao = tecla;
+        numero = numero.replaceAll(',', '.');
         primeiroNumero = double.parse(numero);
+        numero = numero.replaceAll('.', ',');
         numero = '0';
         break;
 
