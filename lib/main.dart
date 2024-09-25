@@ -61,17 +61,17 @@ class _MyAppState extends State<MyApp> {
         //variavel temporararia
         String resultadoString = resultado.toString();
         List<String> resultadoPartes = resultadoString.split('.');
-        print(resultadoPartes);
 
         if (int.parse(resultadoPartes[1]) * 1 == 0) {
-          
-          resultado = int.parse(resultadoPartes[0]);
+          setState(() {
+            numero = int.parse(resultadoPartes[0]).toString();
+          });
+        } else {
+          setState(() {
+            numero = resultado.toString();
+          });
         }
 
-        setState(() {
-          numero = resultado.toString();
-          numero = numero.replaceAll('.', ',');
-        });
         break;
 
       case 'AC':
