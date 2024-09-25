@@ -20,6 +20,14 @@ class Tela1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text('Tela 1'),
+          ),
+        ),
+      ),
+    );
   }
 }
