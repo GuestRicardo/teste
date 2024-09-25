@@ -62,6 +62,15 @@ class _MyAppState extends State<MyApp> {
         if (operacao == '+') {
           resultado = primeiroNumero + double.parse(numero);
         }
+        if (operacao == '-') {
+          resultado = primeiroNumero - double.parse(numero);
+        }
+        if (operacao == 'x') {
+          resultado = primeiroNumero * double.parse(numero);
+        }
+        if (operacao == '/') {
+          resultado = primeiroNumero / double.parse(numero);
+        }
         //para nao ter somente em double sera preciso dividi-lo em duas partes, para isso sera usado listas de arrays segue abaixo:
         //variavel temporararia
         String resultadoString = resultado.toString();
@@ -82,6 +91,12 @@ class _MyAppState extends State<MyApp> {
       case 'AC':
         setState(() {
           numero = '0';
+        });
+        break;
+
+      case '<x':
+        setState(() {
+          numero = numero.substring(0, numero.length - 1);
         });
         break;
 
@@ -128,7 +143,7 @@ class _MyAppState extends State<MyApp> {
               const Text(' '),
               GestureDetector(
                 onTap: () {
-                  calcular('');
+                  calcular('<x');
                 },
                 child: const Text(
                   'DEL',
