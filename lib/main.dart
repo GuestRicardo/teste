@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(\MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -53,10 +53,15 @@ class _MyAppState extends State<MyApp> {
         break;
 
       case '=':
-        double resultado ;
+        double resultado = 0.0;
         if (operacao == '+') {
           resultado = primeiroNumero + double.parse(numero);
         }
+        //para nao ter somente em double sera preciso dividi-lo em duas partes, para isso sera usado listas de arrays segue abaixo:
+        //variavel temporararia
+        String resultadoString = resultado.toString();
+        List<String> resultadoPartes = resultadoString.split('.');
+
         setState(() {
           numero = resultado.toString();
           numero = numero.replaceAll('.', ',');
