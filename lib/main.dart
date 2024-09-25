@@ -96,7 +96,9 @@ class _MyAppState extends State<MyApp> {
 
       case '<x':
         setState(() {
-          numero = numero.substring(0, numero.length - 1);
+          if (numero.isNotEmpty) {
+            numero = numero.substring(0, numero.length - 1);
+          }
         });
         break;
 
@@ -145,10 +147,7 @@ class _MyAppState extends State<MyApp> {
                 onTap: () {
                   calcular('<x');
                 },
-                child: const Text(
-                  'DEL',
-                  style: TextStyle(fontSize: 48),
-                ),
+                child: Image.asset('assets/images/arrow_back.png'),
               ),
             ],
           ),
@@ -313,7 +312,7 @@ class _MyAppState extends State<MyApp> {
               ),
             ],
           ),
-          const Text('Coluna 6'),
+          const Text(''),
         ],
       ),
     ));
