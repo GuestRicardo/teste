@@ -35,14 +35,7 @@ class Tela1 extends StatelessWidget {
           body: Center(
             child: ElevatedButton(
               onPressed: () {
-
-                
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) {
-                    return const Tela2();
-                  }),
-                );
+                Navigator.pushNamed(context, '/tela2');
               },
               child: const Text('Ir para proxima tela.'),
             ),
