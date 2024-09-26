@@ -9,11 +9,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Tela1(),
-
+    return MaterialApp(
+      home: const Tela1(),
+      initialRoute: '/',
       routes: {
-        
+        '/': (context) => const Tela1(),
+        '/tela2': (context) => const Tela1(),
       },
     );
   }
