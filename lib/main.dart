@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const Tela1(),
-        '/tela2': (context) => const Tela1(),
+        '/tela2': (context) => const Tela2(),
       },
     );
   }
