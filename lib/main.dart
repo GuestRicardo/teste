@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const Tela1(),
-        '/tela2': (context) => const Tela2(),
+        Tela2.routeName: (context) => const Tela2(),
       },
     );
   }
@@ -42,7 +42,8 @@ class Tela1 extends StatelessWidget {
           body: Center(
             child: ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/tela2');
+                Navigator.pushNamed(context, '/tela2',
+                    arguments: Argumentos(1, 'Maria'));
               },
               child: const Text('Ir para proxima tela.'),
             ),
