@@ -4,13 +4,20 @@ void main() {
   runApp(const MyApp());
 }
 
+//os parametros que seram passados
+class Argumentos {
+  final int id;
+  final String nome;
+
+  Argumentos(this.id, this.nome);
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Tela1(),
       initialRoute: '/',
       routes: {
         '/': (context) => const Tela1(),
@@ -47,6 +54,9 @@ class Tela1 extends StatelessWidget {
 }
 
 class Tela2 extends StatelessWidget {
+  //identificação da rota dentro do widget
+  static const routeName = '/tela2';
+
   const Tela2({super.key});
 
   @override
