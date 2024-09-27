@@ -68,7 +68,7 @@ class Tela2 extends StatelessWidget {
       child: MaterialApp(
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('Tela 2'),
+            title: const Text('Tela 2 ${argumentos.nome}'),
             backgroundColor: Colors.red,
           ),
           body: Center(
