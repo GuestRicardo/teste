@@ -61,6 +61,9 @@ class Tela2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+//recebendo os argumentos
+    final argumentos = ModalRoute.of(context)?.settings.arguments as Argumentos;
+
     return Container(
       child: MaterialApp(
         home: Scaffold(
