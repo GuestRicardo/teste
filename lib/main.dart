@@ -61,13 +61,14 @@ class Tela2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//recebendo os argumentos
+//para receber os argumentos
     final argumentos = ModalRoute.of(context)?.settings.arguments as Argumentos;
 
     return Container(
       child: MaterialApp(
         home: Scaffold(
           appBar: AppBar(
+            //recebendo os argumentos
             title: const Text('Tela 2 ${argumentos.nome}'),
             backgroundColor: Colors.red,
           ),
