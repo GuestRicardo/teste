@@ -17,21 +17,18 @@ class Home extends StatelessWidget {
       ),
       home: Scaffold(
         backgroundColor: Colors.purple.shade300,
-        appBar: AppBar(
-          title: const Center(
-            child: Text('Quiz - Estudos'),
-          ),
-          backgroundColor: Colors.purple.shade900,
-        ),
-        body: const Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Center(
-              child: FlutterLogo(
-                size: 300,
+        appBar: AppBar(title: const Center(child: Text('Quiz - Estudos'))),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const FlutterLogo(size: 300),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text('Iniciar', style: ,),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
