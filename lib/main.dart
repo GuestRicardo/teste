@@ -12,17 +12,17 @@ class Home extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.dark, //modoNoturno ou .light q é o modo claro
-        primaryColor:
-            Colors.purple.shade100, //barras, botoes, qualquer componente do app
+        primaryColor: const Color.fromARGB(
+            255, 190, 218, 231), //barras, botoes, qualquer componente do app
       ),
       home: Scaffold(
-        backgroundColor: Colors.purple.shade300,
+        backgroundColor: const Color.fromARGB(255, 0, 102, 165),
         appBar: AppBar(title: const Center(child: Text('Quiz - Estudos'))),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const FlutterLogo(size: 300),
+              Image.asset('assets/images/logo.png'),
               ElevatedButton(
                 onPressed: () {
                   print('teste');
