@@ -108,7 +108,7 @@ flutter:
 fonts:
     - family: FutureSpace
       fonts:
-        - assets: fonts/FutureSpace.ttf
+        - assets: assets/fonts/FutureSpace.ttf
     #     - asset: fonts/Schyler-Regular.ttf
     #     - asset: fonts/Schyler-Italic.ttf
     # #       style: italic
