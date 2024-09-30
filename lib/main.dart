@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             fontStyle: FontStyle.italic, //colocando em italico
             decoration: TextDecoration
                 .overline, //linhas no texto podendo ser no meio embaixo, e embaixo so testar as opções
-            fontFamily: 'FutureSpace',
+            fontFamily: 'FuFutureSpace', //aplicando fonte externa
           ),
         ),
       ),
