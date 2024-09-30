@@ -19,18 +19,19 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple.shade300,
         appBar: AppBar(
           title: const Center(
-            child: Text('Aplicativo para teste'),
+            child: Text('Quiz - Estudos'),
           ),
           backgroundColor: Colors.purple.shade900,
         ),
-        body: const Center(
-          child: Text(
-            'teste\nTexto 2', //colocando o texto em 2 linha usase o \n
-            textDirection: TextDirection.ltr,
-            style: TextStyle(
-              fontSize: 50, // tamanho da fonte
+        body: const Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Center(
+              child: FlutterLogo(
+                size: 300,
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );
