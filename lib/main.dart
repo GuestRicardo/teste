@@ -22,14 +22,11 @@ class MyApp extends StatelessWidget {
           style: TextStyle(
             fontSize: 50, // tamanho da fonte
             height: 1.15, //espaçamento de linhas
-            fontWeight: FontWeight
-                .w200, //fonte em negrito, ou so escreve bold, ou normal
+            fontWeight: FontWeight.w200, //fonte em negrito, ou so escreve bold, ou normal
             color: Color.fromARGB(255, 199, 179, 0), //cores e tonalidades
-            backgroundColor:
-                Colors.red, //aq esta trocando o fundo somente do texto
+            backgroundColor:Colors.red, //aq esta trocando o fundo somente do texto
             fontStyle: FontStyle.italic, //colocando em italico
-            decoration: TextDecoration
-                .overline, //linhas no texto podendo ser no meio embaixo, e embaixo so testar as opções
+            decoration: TextDecoration.overline, //linhas no texto podendo ser no meio embaixo, e embaixo so testar as opções
             fontFamily: 'FuFutureSpace', //aplicando fonte externa
           ),
         ),
