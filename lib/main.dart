@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'FutureSpace'),
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Aplicativo para teste'),
@@ -20,16 +21,6 @@ class MyApp extends StatelessWidget {
             textDirection: TextDirection.ltr,
             style: TextStyle(
               fontSize: 50, // tamanho da fonte
-              height: 1.15, //espaçamento de linhas
-              fontWeight: FontWeight
-                  .w200, //fonte em negrito, ou so escreve bold, ou normal
-              color: Color.fromARGB(255, 199, 179, 0), //cores e tonalidades
-              backgroundColor:
-                  Colors.red, //aq esta trocando o fundo somente do texto
-              fontStyle: FontStyle.italic, //colocando em italico
-              decoration: TextDecoration
-                  .overline, //linhas no texto podendo ser no meio embaixo, e embaixo so testar as opções
-              fontFamily: 'FuFutureSpace', //aplicando fonte externa
             ),
           ),
         ),
