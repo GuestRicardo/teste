@@ -10,7 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: const Text('teste'),
+      //essas propriedades se tornam obrigatorias quando estao fora do Scaffold,
+      //se caso esteja dentro, nao precisa do TextDirection
+      child: const Text('teste', textDirection: TextDirection.ltr),
     );
   }
 }
