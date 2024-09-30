@@ -10,10 +10,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'FutureSpace'),
+      theme: ThemeData(
+        brightness: Brightness.dark, //modoNoturno ou .light q é o modo claro
+        primaryColor:
+            Colors.purple.shade100, //barras, botoes, qualquer componente do app
+      ),
       home: Scaffold(
+        backgroundColor: Colors.purple.shade300,
         appBar: AppBar(
-          title: const Text('Aplicativo para teste'),
+          title: const Center(
+            child: Text('Aplicativo para teste'),
+          ),
+          backgroundColor: Colors.purple.shade900,
         ),
         body: const Center(
           child: Text(
