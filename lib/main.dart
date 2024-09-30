@@ -13,10 +13,10 @@ class Home extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark, //modoNoturno ou .light q é o modo claro
         primaryColor: const Color.fromARGB(
-            255, 190, 218, 231), //barras, botoes, qualquer componente do app
+            255, 16, 92, 143), //barras, botoes, qualquer componente do app
       ),
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 0, 102, 165),
+        backgroundColor: const Color.fromARGB(255, 12, 181, 187),
         appBar: AppBar(title: const Center(child: Text('Quiz - Estudos'))),
         body: Center(
           child: Column(
