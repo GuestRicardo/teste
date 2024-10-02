@@ -28,7 +28,6 @@ class _QuizState extends State<Quiz> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Image.asset('assets/images/logo.png'),
               ElevatedButton(
                 onPressed: () {
                   print('teste');
