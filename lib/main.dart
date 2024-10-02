@@ -29,38 +29,38 @@ class _QuizState extends State<Quiz> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const Text('Pergunta 1 de 10'),
-              const Text('Pergunta'),
+              const Text('Pergunta', style: TextStyle(fontSize: 30)),
               ElevatedButton(
                 onPressed: () {
-                  print('teste');
+                  print('teste 1');
                 },
                 style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Resposta 1', style: TextStyle(fontSize: 50)),
+                child: const Text('Resposta 1', style: TextStyle(fontSize: 20)),
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('teste');
+                  print('teste 2');
                 },
                 style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Resposta 2', style: TextStyle(fontSize: 50)),
+                child: const Text('Resposta 2', style: TextStyle(fontSize: 20)),
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('teste');
+                  print('teste 3');
                 },
                 style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Resposta 3', style: TextStyle(fontSize: 50)),
+                child: const Text('Resposta 3', style: TextStyle(fontSize: 20)),
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('teste');
+                  print('teste 4');
                 },
                 style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Resposta 4', style: TextStyle(fontSize: 50)),
+                child: const Text('Resposta 4', style: TextStyle(fontSize: 20)),
               ),
             ],
           ),
