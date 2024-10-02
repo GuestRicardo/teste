@@ -11,6 +11,131 @@ class Quiz extends StatefulWidget {
 class _QuizState extends State<Quiz> {
   @override
   Widget build(BuildContext context) {
+//dados
+//pergunta
+//resposta 1
+//resposta 2
+//resposta 3
+//resposta 4
+//qual é a correta
+//esses dados sera colocado em uma lista
+
+    List quiz = [
+      //map
+      {
+        "pergunta": "Quem descobriu o Brasil",
+        //list
+        "respostas": [
+          "Dom Pedro Primeiro",
+          "Pedro Alvares Cabral",
+          "Tira Dentes",
+          "Dom Pedro Primeiro",
+        ],
+        "alternativa Correta": 2,
+      }
+    ];
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    quiz.add({
+      "pergunta": "Quem descobriu o Brasil",
+      //list
+      "respostas": [
+        "Dom Pedro Primeiro",
+        "Pedro Alvares Cabral",
+        "Tira Dentes",
+        "Dom Pedro Primeiro",
+      ],
+      "alternativa Correta": 2,
+    });
+    print('dados do quiz');
+    print(quiz);
+
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.dark, //modoNoturno ou .light q é o modo claro
