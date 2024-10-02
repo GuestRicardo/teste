@@ -28,13 +28,39 @@ class _QuizState extends State<Quiz> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              const Text('Pergunta 1 de 10'),
+              const Text('Pergunta'),
               ElevatedButton(
                 onPressed: () {
                   print('teste');
                 },
                 style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Iniciar', style: TextStyle(fontSize: 50)),
+                child: const Text('Resposta 1', style: TextStyle(fontSize: 50)),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  print('teste');
+                },
+                style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                child: const Text('Resposta 2', style: TextStyle(fontSize: 50)),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  print('teste');
+                },
+                style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                child: const Text('Resposta 3', style: TextStyle(fontSize: 50)),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  print('teste');
+                },
+                style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                child: const Text('Resposta 4', style: TextStyle(fontSize: 50)),
               ),
             ],
           ),
