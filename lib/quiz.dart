@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'homePage.dart';
 
-void main() {
-  runApp(const Quiz());
-}
-
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
 
@@ -24,19 +20,56 @@ class _QuizState extends State<Quiz> {
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 12, 181, 187),
         appBar: AppBar(title: const Center(child: Text('Quiz - Estudos'))),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  print('teste');
-                },
-                style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Iniciar', style: TextStyle(fontSize: 50)),
-              ),
-            ],
+        body: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                const Align(
+                  alignment: Alignment.topRight,
+                  child:
+                      Text('Pergunta 1 de 10', style: TextStyle(fontSize: 20)),
+                ),
+                const Text('Pergunta', style: TextStyle(fontSize: 30)),
+                ElevatedButton(
+                  onPressed: () {
+                    print('teste 1');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                  child:
+                      const Text('Resposta 1', style: TextStyle(fontSize: 20)),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    print('teste 2');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                  child:
+                      const Text('Resposta 2', style: TextStyle(fontSize: 20)),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    print('teste 3');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                  child:
+                      const Text('Resposta 3', style: TextStyle(fontSize: 20)),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    print('teste 4');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                  child:
+                      const Text('Resposta 4', style: TextStyle(fontSize: 20)),
+                ),
+              ],
+            ),
           ),
         ),
       ),
