@@ -32,7 +32,7 @@ class Resultado extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
                     child: const Text('Jogar Novamente',
-                        style: TextStyle(fontSize: 30)),
+                        style: TextStyle(fontSize: 20)),
                   ),
                 ),
               ],
