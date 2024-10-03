@@ -156,7 +156,7 @@ class _QuizState extends State<Quiz> {
               children: [
                 const Align(
                   alignment: Alignment.topRight,
-                  child: Text('Pergunta $perguntaNumero',
+                  child: Text('Pergunta $perguntaNumero de 10.',
                       style: TextStyle(fontSize: 20)),
                 ),
                 const Text('Pergunta', style: TextStyle(fontSize: 30)),
