@@ -18,14 +18,17 @@ class Resultado extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Image.asset('assets/images/logo.png'),
+              const Text('Resultado', style: TextStyle(fontSize: 30)),
+              const Text('Voce acertou\n de perguntas.',
+                  style: TextStyle(fontSize: 30)),
               ElevatedButton(
                 onPressed: () {
                   print('teste');
                 },
                 style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Iniciar', style: TextStyle(fontSize: 50)),
+                child: const Text('Jogar Novamente',
+                    style: TextStyle(fontSize: 30)),
               ),
             ],
           ),
