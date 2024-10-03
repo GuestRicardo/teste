@@ -136,6 +136,9 @@ class _QuizState extends State<Quiz> {
     print('dados do quiz');
     print(quiz);
 
+    //agora sera criado a renderização das perguntas que sera de 1 a 10
+    const perguntaNumero = 2;
+
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.dark, //modoNoturno ou .light q é o modo claro
@@ -153,8 +156,8 @@ class _QuizState extends State<Quiz> {
               children: [
                 const Align(
                   alignment: Alignment.topRight,
-                  child:
-                      Text('Pergunta 1 de 10', style: TextStyle(fontSize: 20)),
+                  child: Text('Pergunta $perguntaNumero',
+                      style: TextStyle(fontSize: 20)),
                 ),
                 const Text('Pergunta', style: TextStyle(fontSize: 30)),
                 ElevatedButton(
