@@ -19,13 +19,16 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image.asset('assets/images/logo.png'),
-              ElevatedButton(
-                onPressed: () {
-                  print('teste');
-                },
-                style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Iniciar', style: TextStyle(fontSize: 50)),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    print('teste');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                  child: const Text('Iniciar', style: TextStyle(fontSize: 50)),
+                ),
               ),
             ],
           ),

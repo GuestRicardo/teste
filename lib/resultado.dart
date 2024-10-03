@@ -21,14 +21,17 @@ class Resultado extends StatelessWidget {
               const Text('Resultado', style: TextStyle(fontSize: 30)),
               const Text('Voce acertou\n de perguntas.',
                   style: TextStyle(fontSize: 30)),
-              ElevatedButton(
-                onPressed: () {
-                  print('teste');
-                },
-                style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                child: const Text('Jogar Novamente',
-                    style: TextStyle(fontSize: 30)),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    print('teste');
+                  },
+                  style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                  child: const Text('Jogar Novamente',
+                      style: TextStyle(fontSize: 30)),
+                ),
               ),
             ],
           ),
