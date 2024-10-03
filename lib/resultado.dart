@@ -15,7 +15,7 @@ class Resultado extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 12, 181, 187),
         appBar: AppBar(title: const Center(child: Text('Quiz - Estudos'))),
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(20.0),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
