@@ -159,7 +159,7 @@ class _QuizState extends State<Quiz> {
                   child: Text('Pergunta:  $perguntaNumero de 10.',
                       style: TextStyle(fontSize: 20)),
                 ),
-                Text('Pergunta:\n ' + quiz[perguntaNumero - 1]['pergunta'],
+                Text('Pergunta:\n\n ' + quiz[perguntaNumero - 1]['pergunta'],
                     style: const TextStyle(fontSize: 30)),
                 ElevatedButton(
                   onPressed: () {
@@ -167,8 +167,8 @@ class _QuizState extends State<Quiz> {
                   },
                   style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child:
-                      const Text('Resposta 1', style: TextStyle(fontSize: 20)),
+                  child: Text(quiz[perguntaNumero - 1]['respostas'][0],
+                      style: const TextStyle(fontSize: 20)),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -176,8 +176,8 @@ class _QuizState extends State<Quiz> {
                   },
                   style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child:
-                      const Text('Resposta 2', style: TextStyle(fontSize: 20)),
+                  child: Text(quiz[perguntaNumero - 1]['respostas'][1],
+                      style: const TextStyle(fontSize: 20)),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -185,8 +185,8 @@ class _QuizState extends State<Quiz> {
                   },
                   style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child:
-                      const Text('Resposta 3', style: TextStyle(fontSize: 20)),
+                  child: Text(quiz[perguntaNumero - 1]['respostas'][2],
+                      style: const TextStyle(fontSize: 20)),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -194,8 +194,8 @@ class _QuizState extends State<Quiz> {
                   },
                   style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child:
-                      const Text('Resposta 4', style: TextStyle(fontSize: 20)),
+                  child: Text(quiz[perguntaNumero - 1]['respostas'][3],
+                      style: const TextStyle(fontSize: 20)),
                 ),
               ],
             ),
