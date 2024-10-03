@@ -156,10 +156,11 @@ class _QuizState extends State<Quiz> {
               children: [
                 const Align(
                   alignment: Alignment.topRight,
-                  child: Text('Pergunta $perguntaNumero de 10.',
+                  child: Text('Pergunta:  $perguntaNumero de 10.',
                       style: TextStyle(fontSize: 20)),
                 ),
-                const Text('Pergunta', style: TextStyle(fontSize: 30)),
+                Text('Pergunta:\n ' + quiz[perguntaNumero - 1]['pergunta'],
+                    style: const TextStyle(fontSize: 30)),
                 ElevatedButton(
                   onPressed: () {
                     print('teste 1');
