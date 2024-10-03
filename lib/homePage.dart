@@ -14,23 +14,27 @@ class Home extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 12, 181, 187),
         appBar: AppBar(title: const Center(child: Text('Quiz - Estudos'))),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Image.asset('assets/images/logo.png'),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    print('teste');
-                  },
-                  style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child: const Text('Iniciar', style: TextStyle(fontSize: 50)),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset('assets/images/logo.png'),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      print('teste');
+                    },
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                    child:
+                        const Text('Iniciar', style: TextStyle(fontSize: 50)),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
