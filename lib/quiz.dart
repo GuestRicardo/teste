@@ -161,41 +161,53 @@ class _QuizState extends State<Quiz> {
                 ),
                 Text('Pergunta:\n\n ' + quiz[perguntaNumero - 1]['pergunta'],
                     style: const TextStyle(fontSize: 30)),
-                ElevatedButton(
-                  onPressed: () {
-                    print('teste 1');
-                  },
-                  style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child: Text(quiz[perguntaNumero - 1]['respostas'][0],
-                      style: const TextStyle(fontSize: 20)),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      print('teste 1');
+                    },
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                    child: Text(quiz[perguntaNumero - 1]['respostas'][0],
+                        style: const TextStyle(fontSize: 20)),
+                  ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    print('teste 2');
-                  },
-                  style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child: Text(quiz[perguntaNumero - 1]['respostas'][1],
-                      style: const TextStyle(fontSize: 20)),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      print('teste 2');
+                    },
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                    child: Text(quiz[perguntaNumero - 1]['respostas'][1],
+                        style: const TextStyle(fontSize: 20)),
+                  ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    print('teste 3');
-                  },
-                  style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child: Text(quiz[perguntaNumero - 1]['respostas'][2],
-                      style: const TextStyle(fontSize: 20)),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      print('teste 3');
+                    },
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                    child: Text(quiz[perguntaNumero - 1]['respostas'][2],
+                        style: const TextStyle(fontSize: 20)),
+                  ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    print('teste 4');
-                  },
-                  style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
-                  child: Text(quiz[perguntaNumero - 1]['respostas'][3],
-                      style: const TextStyle(fontSize: 20)),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      print('teste 4');
+                    },
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
+                    child: Text(quiz[perguntaNumero - 1]['respostas'][3],
+                        style: const TextStyle(fontSize: 20)),
+                  ),
                 ),
               ],
             ),
