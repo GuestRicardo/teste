@@ -129,7 +129,7 @@ class _QuizState extends State<Quiz> {
         "Dom Pedro Primeiro",
         "Pedro Alvares Cabral",
         "Tira Dentes",
-        "Dom Pedro Primeiro",
+        "Dom Pedro Segundo",
       ],
       "alternativa Correta": 2,
     });
