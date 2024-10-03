@@ -137,7 +137,7 @@ class _QuizState extends State<Quiz> {
     print(quiz);
 
     //agora sera criado a renderização das perguntas que sera de 1 a 10
-    const perguntaNumero = 2;
+    const perguntaNumero = 1;
 
     return MaterialApp(
       theme: ThemeData(
