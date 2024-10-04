@@ -4,7 +4,5 @@ import 'quiz.dart';
 import 'resultado.dart';
 
 void main() {
-  runApp(const Resultado(
-    acertos: 0,
-  ));
+  runApp(Resultado(acertos));
 }
