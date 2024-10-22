@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teste/ESTUDOS/calculadora.dart';
-import 'homePage.dart';
+import 'HomePage.dart';
 import 'quiz.dart';
 import 'resultado.dart';
 
@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+        initialRoute: '/', routes: {'/': (context) => HomePage(), 'Q'});
   }
 }
