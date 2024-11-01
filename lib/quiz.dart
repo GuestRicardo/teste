@@ -35,7 +35,7 @@ class _QuizState extends State<Quiz> {
       }
     ];
     quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
+      "pergunta": "2",
       //list
       "respostas": [
         "Dom Pedro Primeiro",
@@ -46,7 +46,7 @@ class _QuizState extends State<Quiz> {
       "alternativa Correta": 2,
     });
     quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
+      "pergunta": "3",
       //list
       "respostas": [
         "Dom Pedro Primeiro",
@@ -57,7 +57,7 @@ class _QuizState extends State<Quiz> {
       "alternativa Correta": 2,
     });
     quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
+      "pergunta": "4",
       //list
       "respostas": [
         "Dom Pedro Primeiro",
