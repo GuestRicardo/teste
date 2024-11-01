@@ -26,6 +26,7 @@ class Home extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       print('teste');
+                      //rota esta sendo passada aq
                     },
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
