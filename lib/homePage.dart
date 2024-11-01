@@ -27,6 +27,7 @@ class Home extends StatelessWidget {
                     onPressed: () {
                       print('teste');
                       //rota esta sendo passada aq
+                      Navigator.pushNamed(context, 'Quiz');
                     },
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
