@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+class Argumentos {
+  int acertos = 0;
+  Argumentos(this.acertos);
+}
+
 class Resultado extends StatelessWidget {
   static const routName = 'Resultado';
 
@@ -25,7 +30,7 @@ class Resultado extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 const Text('Resultado', style: TextStyle(fontSize: 30)),
-                Text('Voce acertou\n $acertos de 10 perguntas.',
+                Text('Voce acertou\n ${argumentos.acertos} de 10 perguntas.',
                     style: const TextStyle(fontSize: 30)),
                 SizedBox(
                   width: double.infinity,
