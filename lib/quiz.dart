@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quiz/resultado.dart';
 import 'HomePage.dart';
+import 'resultado.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -9,10 +11,10 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-    //agora sera criado a renderização das perguntas que sera de 1 a 10
-int perguntaNumero = 1;
-int acertos = 0;
-int erros = 0;
+  //agora sera criado a renderização das perguntas que sera de 1 a 10
+  int perguntaNumero = 1;
+  int acertos = 0;
+  int erros = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -141,25 +143,24 @@ int erros = 0;
     print('dados do quiz');
     print(quiz);
 
-   
 //###########################################################################
     void respondeu(int respostaNumero) {
       setState(() {
         if (quiz[perguntaNumero - 1]['alternativa_correta'] == respostaNumero) {
           print('acertou');
           acertos++;
-        }else{
-          print('errou'){
-            erros++;
-          }
-          print('acertos totais: $acertos erros totais: $erros');
+        } else {
+          print('errou');
+          erros++;
+        }
+        print('acertos totais: $acertos erros totais: $erros');
 
-          if(perguntaNumero==10){
-            print('Terminou o Quiz');
-            Navigator.pushNamed(context, 'Resultado', arguments: acertos);
-          }else{
-            respostaNumero++;
-          }
+        if (perguntaNumero == 10) {
+          print('Terminou o Quiz');
+          Navigator.pushNamed(context, 'Resultado',
+              arguments: Argumentos(acertos));
+        } else {
+          respostaNumero++;
         }
       });
     }
