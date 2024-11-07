@@ -166,6 +166,7 @@ class _QuizState extends State<Quiz> {
                   child: ElevatedButton(
                     onPressed: () {
                       print('teste 1');
+                      respondeu(1);
                     },
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
