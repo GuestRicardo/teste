@@ -35,13 +35,13 @@ class _QuizState extends State<Quiz> {
       }
     ];
     quiz.add({
-      "pergunta": "2",
+      "pergunta": "O flutter é?",
       //list
       "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Primeiro",
+        "Linguagem",
+        "Aplicativo",
+        "SDK",
+        "framework",
       ],
       "alternativa Correta": 2,
     });
