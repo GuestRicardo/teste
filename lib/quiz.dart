@@ -9,6 +9,11 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+    //agora sera criado a renderização das perguntas que sera de 1 a 10
+int perguntaNumero = 1;
+int acertos = 0;
+int erros = 0;
+
   @override
   Widget build(BuildContext context) {
 //dados
@@ -136,8 +141,7 @@ class _QuizState extends State<Quiz> {
     print('dados do quiz');
     print(quiz);
 
-    //agora sera criado a renderização das perguntas que sera de 1 a 10
-    const perguntaNumero = 1;
+   
 //###########################################################################
     void respondeu(int respostaNumero) {
       setState(() {
