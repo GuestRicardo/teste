@@ -6,7 +6,7 @@ class Argumentos {
 }
 
 class Resultado extends StatelessWidget {
-  static const routName = 'Resultado';
+  static const routeName = 'Resultado';
 
   const Resultado({super.key});
 
