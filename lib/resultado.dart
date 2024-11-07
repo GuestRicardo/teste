@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Resultado extends StatelessWidget {
-  const Resultado({super.key, this.acertos = 0});
+  static const routName = 'Resultado';
 
-  final acertos;
+  const Resultado({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final argumentos = ModalRoute.of(context).settings.arguments as Argumentos;
+
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.dark, //modoNoturno ou .light q é o modo claro

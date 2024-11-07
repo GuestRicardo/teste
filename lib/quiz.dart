@@ -138,6 +138,27 @@ class _QuizState extends State<Quiz> {
 
     //agora sera criado a renderização das perguntas que sera de 1 a 10
     const perguntaNumero = 1;
+//###########################################################################
+    void respondeu(int respostaNumero) {
+      setState(() {
+        if (quiz[perguntaNumero - 1]['alternativa_correta'] == respostaNumero) {
+          print('acertou');
+          acertos++;
+        }else{
+          print('errou'){
+            erros++;
+          }
+          print('acertos totais: $acertos erros totais: $erros');
+
+          if(perguntaNumero==10){
+            print('Terminou o Quiz');
+            Navigator.pushNamed(context, 'Resultado', arguments: acertos);
+          }else{
+            respostaNumero++;
+          }
+        }
+      });
+    }
 
     return MaterialApp(
       theme: ThemeData(
