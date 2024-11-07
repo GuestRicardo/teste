@@ -23,7 +23,7 @@ class _QuizState extends State<Quiz> {
     List quiz = [
       //map
       {
-        "pergunta": "Quem descobriu o Brasil",
+        "pergunta": "Quem descobriu o Brasil?",
         //list
         "respostas": [
           "Dom Pedro Primeiro",
