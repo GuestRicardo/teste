@@ -39,6 +39,8 @@ class Resultado extends StatelessWidget {
                       print('teste');
                       //retornando para a tela inicial
                       Navigator.pop(context);
+
+                      Navigator.pushNamed(context, 'quiz');
                     },
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
