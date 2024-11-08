@@ -28,7 +28,7 @@ final List quiz = [
     "alternativa Correta": 2,
   },
   {
-    "pergunta": "O flutter é?",
+    "pergunta": "Pergunta 3",
     //list
     "respostas": [
       "Linguagem",
