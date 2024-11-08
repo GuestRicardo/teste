@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(initialRoute: '/', routes: {
       '/': (context) => const Home(),
-      'Quiz': (context) => const Quiz(),
+      'Quiz': (context) => Quiz(),
       Resultado.routeName: (context) => const Resultado(),
     });
   }
