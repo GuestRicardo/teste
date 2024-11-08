@@ -3,8 +3,47 @@ import 'package:flutter/material.dart';
 import 'HomePage.dart';
 import 'resultado.dart';
 
+final List quiz = [
+  //map
+  {
+    "pergunta": "Quem descobriu o Brasil?",
+    //list
+    "respostas": [
+      "Dom Pedro Primeiro",
+      "Pedro Alvares Cabral",
+      "Tira Dentes",
+      "Dom Pedro Primeiro",
+    ],
+    "alternativa Correta": 2,
+  },
+  {
+    "pergunta": "O flutter é?",
+    //list
+    "respostas": [
+      "Linguagem",
+      "Aplicativo",
+      "SDK",
+      "framework",
+    ],
+    "alternativa Correta": 2,
+  },
+  {
+    "pergunta": "O flutter é?",
+    //list
+    "respostas": [
+      "Linguagem",
+      "Aplicativo",
+      "SDK",
+      "framework",
+    ],
+    "alternativa Correta": 2,
+  },
+];
+
 class Quiz extends StatefulWidget {
-  const Quiz({super.key});
+  const Quiz({required Key key, required this.quiz}) : super(key: key);
+
+  final List quiz;
 
   @override
   State<Quiz> createState() => _QuizState();
@@ -27,121 +66,107 @@ class _QuizState extends State<Quiz> {
 //qual é a correta
 //esses dados sera colocado em uma lista
 
-    List quiz = [
-      //map
-      {
-        "pergunta": "Quem descobriu o Brasil?",
-        //list
-        "respostas": [
-          "Dom Pedro Primeiro",
-          "Pedro Alvares Cabral",
-          "Tira Dentes",
-          "Dom Pedro Primeiro",
-        ],
-        "alternativa Correta": 2,
-      }
-    ];
-    quiz.add({
-      "pergunta": "O flutter é?",
-      //list
-      "respostas": [
-        "Linguagem",
-        "Aplicativo",
-        "SDK",
-        "framework",
-      ],
-      "alternativa Correta": 2,
-    });
-    quiz.add({
-      "pergunta": "3",
-      //list
-      "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Primeiro",
-      ],
-      "alternativa Correta": 2,
-    });
-    quiz.add({
-      "pergunta": "4",
-      //list
-      "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Primeiro",
-      ],
-      "alternativa Correta": 2,
-    });
-    quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
-      //list
-      "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Primeiro",
-      ],
-      "alternativa Correta": 2,
-    });
-    quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
-      //list
-      "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Primeiro",
-      ],
-      "alternativa Correta": 2,
-    });
-    quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
-      //list
-      "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Primeiro",
-      ],
-      "alternativa Correta": 2,
-    });
-    quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
-      //list
-      "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Primeiro",
-      ],
-      "alternativa Correta": 2,
-    });
-    quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
-      //list
-      "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Primeiro",
-      ],
-      "alternativa Correta": 2,
-    });
-    quiz.add({
-      "pergunta": "Quem descobriu o Brasil",
-      //list
-      "respostas": [
-        "Dom Pedro Primeiro",
-        "Pedro Alvares Cabral",
-        "Tira Dentes",
-        "Dom Pedro Segundo",
-      ],
-      "alternativa Correta": 2,
-    });
-    print('dados do quiz');
-    print(quiz);
+    // quiz.add({
+    //   "pergunta": "O flutter é?",
+    //   //list
+    //   "respostas": [
+    //     "Linguagem",
+    //     "Aplicativo",
+    //     "SDK",
+    //     "framework",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // quiz.add({
+    //   "pergunta": "3",
+    //   //list
+    //   "respostas": [
+    //     "Dom Pedro Primeiro",
+    //     "Pedro Alvares Cabral",
+    //     "Tira Dentes",
+    //     "Dom Pedro Primeiro",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // quiz.add({
+    //   "pergunta": "4",
+    //   //list
+    //   "respostas": [
+    //     "Dom Pedro Primeiro",
+    //     "Pedro Alvares Cabral",
+    //     "Tira Dentes",
+    //     "Dom Pedro Primeiro",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // quiz.add({
+    //   "pergunta": "Quem descobriu o Brasil",
+    //   //list
+    //   "respostas": [
+    //     "Dom Pedro Primeiro",
+    //     "Pedro Alvares Cabral",
+    //     "Tira Dentes",
+    //     "Dom Pedro Primeiro",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // quiz.add({
+    //   "pergunta": "Quem descobriu o Brasil",
+    //   //list
+    //   "respostas": [
+    //     "Dom Pedro Primeiro",
+    //     "Pedro Alvares Cabral",
+    //     "Tira Dentes",
+    //     "Dom Pedro Primeiro",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // quiz.add({
+    //   "pergunta": "Quem descobriu o Brasil",
+    //   //list
+    //   "respostas": [
+    //     "Dom Pedro Primeiro",
+    //     "Pedro Alvares Cabral",
+    //     "Tira Dentes",
+    //     "Dom Pedro Primeiro",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // quiz.add({
+    //   "pergunta": "Quem descobriu o Brasil",
+    //   //list
+    //   "respostas": [
+    //     "Dom Pedro Primeiro",
+    //     "Pedro Alvares Cabral",
+    //     "Tira Dentes",
+    //     "Dom Pedro Primeiro",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // quiz.add({
+    //   "pergunta": "Quem descobriu o Brasil",
+    //   //list
+    //   "respostas": [
+    //     "Dom Pedro Primeiro",
+    //     "Pedro Alvares Cabral",
+    //     "Tira Dentes",
+    //     "Dom Pedro Primeiro",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // quiz.add({
+    //   "pergunta": "Quem descobriu o Brasil",
+    //   //list
+    //   "respostas": [
+    //     "Dom Pedro Primeiro",
+    //     "Pedro Alvares Cabral",
+    //     "Tira Dentes",
+    //     "Dom Pedro Segundo",
+    //   ],
+    //   "alternativa Correta": 2,
+    // });
+    // print('dados do quiz');
+    // print(quiz);
 
 //###########################################################################
     void respondeu(int respostaNumero) {
