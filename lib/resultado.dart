@@ -37,6 +37,8 @@ class Resultado extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       print('teste');
+                      //retornando para a tela inicial
+                      Navigator.pop(context);
                     },
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.fromLTRB(100, 20, 100, 20)),
