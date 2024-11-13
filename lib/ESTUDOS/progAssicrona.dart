@@ -9,9 +9,9 @@ void main() async {
   print(2);
   print(3);
   await quatro();
-  //o await e usado quando tem um processo q depende de outro, 
+  //o await e usado quando tem um processo q depende de outro,
   //neste caso o 5 esta esperando os 34 segundos pra imprimir depois do 4, q esta com
-  //com a configuração na função abaixo  
+  //com a configuração na função abaixo
   print(5);
 }
 
