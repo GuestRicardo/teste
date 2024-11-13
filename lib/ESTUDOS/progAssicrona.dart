@@ -1,9 +1,6 @@
 import 'dart:async';
 
-void main() {
-//Assicrona
-
-// //aq esta sendo criado uma variavel tipo void q retornara somente um print, e tera uma espera de 3 segundos via o delay
+void main() async {
 //   Future<void> quatro = Future.delayed(Duration(seconds: 3));
 // //aq ele vai imprimir o numero o 4
 //   quatro.then((value) => print(4));
@@ -11,10 +8,13 @@ void main() {
   print(1);
   print(2);
   print(3);
-  quatro();
+  await quatro();
+  //o await e usado quando tem um processo q depende de outro, 
+  //neste caso o 5 esta esperando os 34 segundos pra imprimir depois do 4, q esta com
+  //com a configuração na função abaixo  
   print(5);
 }
 
 Future<void> quatro() async {
-  Future.delayed(Duration(seconds: 3), () => print(4));
+  Future.delayed(const Duration(seconds: 3), () => print(4));
 }
